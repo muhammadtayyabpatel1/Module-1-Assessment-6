@@ -1,0 +1,171 @@
+﻿&nbsp;<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact Us - Meena E-Commerce Store</title><style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        /* Navigation Menu */
+        #menu {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        #menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #FF6600;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+        #menu a:hover {
+            background-color: #E65100;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact-title {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .contact-details {
+            background: #595959;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 16px;
+        }
+        
+        .contact-details p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .contact-details a {
+            color: #F2F2F2;
+            text-decoration: underline;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .contact-form label {
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+        }
+
+        .contact-form button {
+            background-color: #FF6600;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #E65100;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 15px;
+            }
+
+            .contact-title {
+                font-size: 24px;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                font-size: 14px;
+            }
+
+            .contact-form button {
+                font-size: 16px;
+            }
+        }
+    </style></head><body><!-- Navigation Menu --><div id="menu">
+        <a href="index.html">Home</a>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <div class="contact-title">Contact Us</div>
+        
+        <div class="contact-details">
+            <p><strong>📍 Address:</strong> Makeni, Lusaka, Zambia</p>
+            <p><strong>📞 Phone:</strong> +260950778686 | +260980208727</p>
+            <p><strong>📠 Fax:</strong> +260980208727</p>
+            <p><strong>📧 Email:</strong> 
+                <a href="mailto:muhammadtayyabpatel@gmail.com">
+                    muhammadtayyabpatel@gmail.com
+                </a>
+            </p>
+            <p><strong>🕒 Office Hours:</strong> Mon-Sat: 08:00 - 18:00 | Sunday: Closed</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
